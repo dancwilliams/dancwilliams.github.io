@@ -94,3 +94,8 @@ I would like to say a quick thank you to the following references while I was wo
 *   Josh O’Brien ([@joshobrien77](https://twitter.com/joshobrien77)) over at staticnat.com! You post on Nexus 7000 TACACS+ helped a TON. You can read it [here](http://www.staticnat.com/2010/11/07/tacacs-on-nexus-7000/).
 *   [Cisco Nexus 7K Security Design Guide](http://www.cisco.com/en/US/docs/switches/datacenter/sw/6_x/nx-os/security/configuration/guide/b_Cisco_Nexus_7000_NX-OS_Security_Configuration_Guide__Release_6.x_chapter_0110.html)
 *   [Cisco Nexus 7K TACACS+ Example](https://supportforums.cisco.com/docs/DOC-16435)
+
+* * *
+
+1.  Terminal Access Controller Access-Control System Plus [↩](1 "return to article")
+2.  Virtual Device Context [↩](2 "return to article")
