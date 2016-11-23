@@ -1,12 +1,13 @@
 ---
 layout: post
 title: Cisco DMVPN Phase 3
+excerpt_separator: <!--more-->
 ---
 
 ## The Request:
 
 I have a client with a data center, a headquarters/DR site, and a lot of branches spread out all over the world with Internet connectivity. They are currently using static IPSEC Internet facing VPNs to connect to their data center and HQ environemts, but the company is hitting a growth spurt and they are quickly realizing this solution is becoming difficult to scale and manage with their limited in-house IT staff. The client wanted to stick with Internet based VPNs for connectivity. They also wanted a solution that would allow them to easily stand up a new remote site quickly with a template configuration and provide tunnel redundancy between the data center and HQ locations. They also wanted direct site-to-site communications when necessary.
-
+<!--more-->
 ## The Solution:
 
 **_The examples below are from my lab. They are working in production with different crypto algorithms._** Since this client has an existing Cisco routing environment and plans to continue to use Cisco routers it was decided that a DMVPN setup would work best to met their needs. To provide the type of connectivity they desired a Phase 3 dual-hub setup would be the best bet. The client also had an existing EIGRP setup that ran between the HQ and data center over an existing GRE tunnel. This GRE tunnel will be removed and replaced with the DMVPN as well. There is nothing special with the EIGRP configuration used on the routers when using this DMVPN setup besides the EIGRP aggregate statements we will place on the hub tunnel interfaces. First lets look at the standard crypto config that goes on all routers, both hub and spoke:
