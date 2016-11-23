@@ -23,11 +23,3 @@ Also here is a quick screen shot of the settings for the WAV conversion so it wi
 ## Conclusion:
 
 This is just a short post on a topic I am asked about often. I am sure there are MANY different ways to accomplish this task using many different tools and methods. I would love for you all to share your method in the comments so we can all learn!
-
-<div class="footnotes">
-
-* * *
-
-1.  Unified Communications [↩](1 "return to article")
-
-© Daniel C Williams and NetworkHobo.com, 2014\. Unauthorized use and/or duplication of this material without express and written permission from this blog’s author and/or owner is strictly prohibited. Excerpts and links may be used, provided that full and clear credit is given to Daniel C Williams and NetworkHobo.com with appropriate and specific direction to the original content.</div>
