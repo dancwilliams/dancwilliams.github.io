@@ -20,7 +20,39 @@ The Cisco phone system consists of the following components:
 *   Cisco CUCM[[2]](2 "see footnote") 9.0
 *   CUC[[3]](3 "see footnote") 9.0
 
-This process is the same on both the CUCM and CUC. There are additional services to backup under CUC but the backup system is identical. The first thing I needed to do was access the phone system and verify Internet connectivity. I used RDP[[4]](4 "see footnote") to access the client’s management server. Once logged in I accessed the phone system to verify Internet connectivity. This is done by logging into Cisco Unified OS Administration web page then going to Services > Ping and trying to ping an outside address (4.2.2.2 in this example): [![Screenshot 2013-12-23 08.47.19](http://thenetworkhobo.files.wordpress.com/2013/12/screenshot-2013-12-23-08-47-19.png?w=300)](http://thenetworkhobo.files.wordpress.com/2013/12/screenshot-2013-12-23-08-47-19.png) Once Internet connectivity from the phone system was verified I moved on to configuring my local system to accept the transfer. First I configured NAT on the Apple Airport Express to pass SSH (port 22) from the Internet to my laptop. Below are the screenshots: First we access the Airport Utility and click on the Internet access router. Make note of the IP Address as you will need it later: [![Screenshot 2013-12-23 08.44.04](http://thenetworkhobo.files.wordpress.com/2013/12/screenshot-2013-12-23-08-44-04.png?w=300)](http://thenetworkhobo.files.wordpress.com/2013/12/screenshot-2013-12-23-08-44-04.png) Next we click "Edit" and go to the "Network" tab. Then click the "+" below the "Port Settings" field: [![Screenshot 2013-12-23 08.44.35](http://thenetworkhobo.files.wordpress.com/2013/12/screenshot-2013-12-23-08-44-35.png?w=300)](http://thenetworkhobo.files.wordpress.com/2013/12/screenshot-2013-12-23-08-44-35.png) Next use the drop down to select the "Remote Login - SSH" service and point it to the IP of your laptop. Click "Save" and then apply the configuration to the Airport Express: [![Screenshot 2013-12-23 08.44.53](http://thenetworkhobo.files.wordpress.com/2013/12/screenshot-2013-12-23-08-44-53.png?w=300)](http://thenetworkhobo.files.wordpress.com/2013/12/screenshot-2013-12-23-08-44-53.png) Once this was configured I moved on to configuring my laptop to accept SSH connections. This process is pretty straight forward and I have included screenshots below: [![Screenshot 2013-12-23 08.41.10](http://thenetworkhobo.files.wordpress.com/2013/12/screenshot-2013-12-23-08-41-10.png?w=300)](http://thenetworkhobo.files.wordpress.com/2013/12/screenshot-2013-12-23-08-41-10.png) [![Screenshot 2013-12-23 08.41.39](http://thenetworkhobo.files.wordpress.com/2013/12/screenshot-2013-12-23-08-41-39.png?w=300)](http://thenetworkhobo.files.wordpress.com/2013/12/screenshot-2013-12-23-08-41-39.png) Once SSH was configured on the laptop it was time to configure a backup device on the phone system and perform a manual backup. Below are the screenshots: First I accessed the Disaster Recovery System > Backup > Backup Device and configured a new device. You would replace the X.X.X.X with you Internet/Public IP address that you got off of your Airport Express. Point the path to where you would like the backup files to be saved (I created a folder on my desktop to collect the files). Then use your laptop username and password. When you save the backup device it will test connectivity before declaring a successful save. [![Screenshot 2013-12-23 08.49.13](http://thenetworkhobo.files.wordpress.com/2013/12/screenshot-2013-12-23-08-49-13.png?w=300)](http://thenetworkhobo.files.wordpress.com/2013/12/screenshot-2013-12-23-08-49-13.png) Next you will go into Backup > Manual and start a manual backup of all available services. You will select the services by checking the box beside each one. In Unity Connection you may receive popups concerning dependencies. This will be ok since you will be selecting all services to back up. [![Screenshot 2013-12-23 09.33.11](http://thenetworkhobo.files.wordpress.com/2013/12/screenshot-2013-12-23-09-33-11.png?w=300)](http://thenetworkhobo.files.wordpress.com/2013/12/screenshot-2013-12-23-09-33-11.png) Once I verified the backups (Backup > History) were successful I loaded them to Dropbox and shared them out to my client. Too easy! [![Screenshot 2013-12-23 09.33.32](http://thenetworkhobo.files.wordpress.com/2013/12/screenshot-2013-12-23-09-33-32.png?w=300)](http://thenetworkhobo.files.wordpress.com/2013/12/screenshot-2013-12-23-09-33-32.png)
+This process is the same on both the CUCM and CUC. There are additional services to backup under CUC but the backup system is identical. The first thing I needed to do was access the phone system and verify Internet connectivity. I used RDP[[4]](4 "see footnote") to access the client’s management server. Once logged in I accessed the phone system to verify Internet connectivity. This is done by logging into Cisco Unified OS Administration web page then going to Services > Ping and trying to ping an outside address (4.2.2.2 in this example):
+
+[![Screenshot 2013-12-23 08.47.19](/images/screenshot-2013-12-23-08-47-19.png)](/images/screenshot-2013-12-23-08-47-19.png)
+
+Once Internet connectivity from the phone system was verified I moved on to configuring my local system to accept the transfer. First I configured NAT on the Apple Airport Express to pass SSH (port 22) from the Internet to my laptop. Below are the screenshots: First we access the Airport Utility and click on the Internet access router. Make note of the IP Address as you will need it later:
+
+[![Screenshot 2013-12-23 08.44.04](/images/screenshot-2013-12-23-08-44-04.png)](/images/screenshot-2013-12-23-08-44-04.png)
+
+Next we click "Edit" and go to the "Network" tab. Then click the "+" below the "Port Settings" field:
+
+[![Screenshot 2013-12-23 08.44.35](/images/screenshot-2013-12-23-08-44-35.png)](/images/screenshot-2013-12-23-08-44-35.png)
+
+Next use the drop down to select the "Remote Login - SSH" service and point it to the IP of your laptop. Click "Save" and then apply the configuration to the Airport Express:
+
+[![Screenshot 2013-12-23 08.44.53](/images/screenshot-2013-12-23-08-44-53.png)](/images/screenshot-2013-12-23-08-44-53.png)
+
+Once this was configured I moved on to configuring my laptop to accept SSH connections. This process is pretty straight forward and I have included screenshots below:
+
+[![Screenshot 2013-12-23 08.41.10](/images/screenshot-2013-12-23-08-41-10.png)](/images/screenshot-2013-12-23-08-41-10.png)
+
+[![Screenshot 2013-12-23 08.41.39](/images/screenshot-2013-12-23-08-41-39.png)](/images/screenshot-2013-12-23-08-41-39.png)
+
+Once SSH was configured on the laptop it was time to configure a backup device on the phone system and perform a manual backup. Below are the screenshots: First I accessed the Disaster Recovery System > Backup > Backup Device and configured a new device. You would replace the X.X.X.X with you Internet/Public IP address that you got off of your Airport Express. Point the path to where you would like the backup files to be saved (I created a folder on my desktop to collect the files). Then use your laptop username and password. When you save the backup device it will test connectivity before declaring a successful save.
+
+[![Screenshot 2013-12-23 08.49.13](/images/screenshot-2013-12-23-08-49-13.png)](/images/screenshot-2013-12-23-08-49-13.png)
+
+Next you will go into Backup > Manual and start a manual backup of all available services. You will select the services by checking the box beside each one. In Unity Connection you may receive popups concerning dependencies. This will be ok since you will be selecting all services to back up.
+
+[![Screenshot 2013-12-23 09.33.11](/images/screenshot-2013-12-23-09-33-11.png)](/images/screenshot-2013-12-23-09-33-11.png)
+
+Once I verified the backups (Backup > History) were successful I loaded them to Dropbox and shared them out to my client. Too easy! 
+
+[![Screenshot 2013-12-23 09.33.32](/images/screenshot-2013-12-23-09-33-32.png)](/images/screenshot-2013-12-23-09-33-32.png)
 
 ## Conclusion:
 
