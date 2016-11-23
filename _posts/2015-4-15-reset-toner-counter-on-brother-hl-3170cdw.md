@@ -1,3 +1,8 @@
+---
+layout: post
+title: Reset Toner Counter on brother HL-3170CDW
+---
+
 ## Quick Note:
 
 I thought I would make a quick post about how I reset the toner counters on my brother HL-3170CDW. I find myself having to search for these steps every few months.
