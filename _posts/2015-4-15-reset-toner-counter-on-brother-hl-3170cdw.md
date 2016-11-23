@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Reset Toner Counter on Brother HL-3170CDW
+excerpt_separator: <!--more-->
 ---
 
 ## Quick Note:
@@ -10,7 +11,7 @@ I thought I would make a quick post about how I reset the toner counters on my b
 ## The Request:
 
 I love my brother HL-3170CDW printer ([CLICK HERE](http://smile.amazon.com/Brother-HL-3170CDW-Digital-Wireless-Networking/dp/B00BQU141C/ref=sr_1_1?ie=UTF8&qid=1429131433&sr=8-1&keywords=HL-3170CDW "Hl-3170CDW")). It performs great and always works for us. The one thing I do not like is buying toner cartridges...and I have yet to do so! I have owned this printer since August 13, 2013 and have yet to replace the toner even though I use it regularly. My current page count is a total 1,432 pages with 1,009 being color and 423 being monochrome and I am still using the starter cartridges that came with the printer. The brother spec sheet ([CLICK HERE](http://www.brother-usa.com/Printer/ModelDetail/1/HL3170CDW/spec#.VS7ZzPnF9fw "HL-3170CDW Tech Specs")) states that the starter cartridges are good for 1,000 pages each, but I have been given the "Toner Low" error almost 3 times now.
-
+<!--more-->
 ## The Solution:
 
 The secret behind the continual use of the toner cartridges is the ability to reset the counters so the printer thinks the cartridges are new again. I will continue to do this until print quality decreases. Below are the steps to reset the counters. I always reset all cartridges...just to save myself time.
