@@ -1,10 +1,10 @@
 <section class="comments">
 	<div class="constrain--body">
-		<div class="comments__existing js-comments" {% if site.data.comments[post_slug] == null %}aria-hidden="true"{% endif %}>
+		<div class="comments__existing js-comments" {% if site.data.comments[page.slug] == null %}aria-hidden="true"{% endif %}>
 			<h2 class="comments__heading heading-2">Comments</h2>
 
 			{% if site.data.comments[post.slug] %}
-				{% assign comments = site.data.comments[post_slug] | sort %}
+				{% assign comments = site.data.comments[page.slug] | sort %}
 				
 				{% for comment in comments %}
 					{% assign email = comment[1].email %}
