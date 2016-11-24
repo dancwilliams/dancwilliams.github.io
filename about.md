@@ -4,12 +4,10 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+# **Hi! I Am Dan!**
 
-### More Information
+I have been in the networking field for over 10 years now. I have specialized in voice for most of this time but have also done quite a bit in the route/switch arena as well. These days you will find me digging around in the data center and working neck deep in the land of Nexus and UCS.
 
-A place to include any other types of information that you'd like to include about yourself.
+You can find me on LinkedIn by clicking [he](http://www.linkedin.com/in/danielcwilliams "Dan C on LinkedIN")[re](http://www.linkedin.com/in/danielcwilliams "Dan C on LinkedIN")! You can also find me on twitter [@dancwilliams](http://bit.ly/1kj2jZd "Dan C Williams - twitter")!
 
-### Contact me
-
-[email@domain.com](mailto:email@domain.com)
+Thanks for dropping by the site!
