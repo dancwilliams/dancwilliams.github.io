@@ -51,12 +51,12 @@ comments:
     # (!) ENCRYPTED
     #
     # Mailgun API key
-    apiKey: key-80ffdba44d3e6a33b405e0456dcc57bc
+    apiKey: ""
 
     # (!) ENCRYPTED
     #
     # Mailgun domain (encrypted)
-    domain: mg.networkhobo.net
+    domain: ""
 
   # (*) REQUIRED
 
