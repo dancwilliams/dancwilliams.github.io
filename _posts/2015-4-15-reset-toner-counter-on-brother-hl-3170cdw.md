@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Reset Toner Counter on Brother HL-3170CDW
+title: "Reset Toner Counter on Brother HL-3170CDW"
 excerpt_separator: <!--more-->
 ---
 
