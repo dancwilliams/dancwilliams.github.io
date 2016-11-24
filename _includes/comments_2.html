@@ -2,6 +2,7 @@
     <input name="options[slug]" type="hidden" value="{{ page.slug }}">
     <input name="options[parent]" type="hidden" value="{{ page.slug }}">
     <input type="hidden" name="options[origin]" value="{{ site.url }}{{ page.url }}">
+    <input type="hidden" name="options[redirect]" value="{{ site.url }}{{ page.url }}">
     
     <input type="text" name="company" class="text-field" style="display: none">
     <input class="form__field text-field" type="text" name="fields[name]" placeholder="Name" required/>
