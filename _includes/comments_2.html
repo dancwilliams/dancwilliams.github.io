@@ -1,6 +1,6 @@
 <form id="comments_2" class="form" action="{{ site.staticmanUrl }}" method="post">
-    <input type="hidden" name="options[slug]" value="{{ post_slug }}">
-    <input type="hidden" name="options[parent]" value="{{ post_slug }}">
+    <input type="hidden" name="options[slug]" value="{{ post.slug }}">
+    <input type="hidden" name="options[parent]" value="{{ post.slug }}">
     <input type="hidden" name="options[origin]" value="{{ site.url }}{{ page.url }}">
     
     <input type="text" name="company" class="text-field" style="display: none">
