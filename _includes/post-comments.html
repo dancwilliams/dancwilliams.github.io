@@ -1,11 +1,9 @@
-{% capture post_slug %}{{ page.date | date: "%Y-%m-%d" }}-{{ page.title | slugify }}{% endcapture %}
-
 <section class="comments">
 	<div class="constrain--body">
 		<div class="comments__existing js-comments" {% if site.data.comments[post_slug] == null %}aria-hidden="true"{% endif %}>
 			<h2 class="comments__heading heading-2">Comments</h2>
 
-			{% if site.data.comments[post_slug] %}
+			{% if site.data.comments[post.slug] %}
 				{% assign comments = site.data.comments[post_slug] | sort %}
 				
 				{% for comment in comments %}
