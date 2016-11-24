@@ -84,3 +84,6 @@ exclude:
   - LICENSE
   - README.md
   - CNAME
+
+# Staticman
+staticmanUrl:  https://api.staticman.net/v2/entry/dancwilliams/dancwilliams.github.io/master/comments
