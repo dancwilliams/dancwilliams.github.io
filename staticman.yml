@@ -46,17 +46,17 @@ comments:
   # with Mailgun, which you can get for free at http://mailgun.com.
   notifications:
     # Enable notifications
-    enabled: false
+    enabled: true
 
     # (!) ENCRYPTED
     #
     # Mailgun API key
-    apiKey: ""
+    apiKey: "TJAB9a9Tj3bbIH9Gs4setEITm58r1XUD2zbASwgkja+ZkgdOXqBJH4oJE7N8iwto/I4Q+er0a8tUbDnjYas05c63WFku0JPVs9jp5L3z1H3Arl3PqhV5R0DJcOyspjhYZFQiph7GBqOsmFfPhyE+Y7FbFyeE4OSPhwKiYr7xc1k="
 
     # (!) ENCRYPTED
     #
     # Mailgun domain (encrypted)
-    domain: ""
+    domain: "DLld/UG9CG52mWfFPPnsJ9puSQNDOVaW/gKm9zhsThpewptyHTTiPgyRbUFyaIOrMlQnv6Y4a/BTL4AgV6BDvocjSedcGDW6OVyy3te8DAzuonH8SGut43N0zD4cJT1Hclid70aqSrv533y7Jyd1pLebcW66Rq/+Rlw2G2hdMik="
 
   # (*) REQUIRED
 
