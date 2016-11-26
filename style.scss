@@ -278,6 +278,21 @@ nav {
   background-color: $lightGray;
 }
 
+.form {
+
+}
+
+.form__field {
+  display: block;
+  margin: 15px 0;
+}
+
+.text-field {
+  display: block;
+  width: 100%;
+  font-family: $font-family-primary;
+}
+
 footer {
   padding: 20px 0;
   text-align: center;
